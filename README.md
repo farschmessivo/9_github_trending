@@ -10,10 +10,7 @@ The script requires the installed Python interpreter version 3.5
 Example of script launch on Linux, Python 3.5:
 ```
 $ python github_trending.py
-```
 
-output
-```
 Name: wechat_jump_game
 Issues: 2
 Link: https://api.github.com/repos/wangshub/wechat_jump_game
@@ -37,10 +34,7 @@ Link: https://api.github.com/repos/wangdoc/javascript-tutorial
 Name: retrofit2-kotlin-coroutines-adapter
 Issues: 2
 Link: https://api.github.com/repos/JakeWharton/retrofit2-kotlin-coroutines-adapter
-
-
 ```
-Running on Windows is similar.
 
 
 # Project Goals
