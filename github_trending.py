@@ -33,7 +33,6 @@ def print_top_github_repo(list_repo):
         print('Link: {}\n'.format(repo['url']))
 
 
-
 if __name__ == '__main__':
     list_top_github_repo = get_trending_repositories(top_size)
     print_top_github_repo(list_top_github_repo)
