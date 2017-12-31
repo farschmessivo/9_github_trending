@@ -19,8 +19,10 @@ def get_trending_repositories(top_size):
 
 
 def get_open_issues_amount(repo_owner, repo_name):
-    url = 'https://api.github.com/repos/{}/{}/issues'.format(repo_owner,
-                                                             repo_name)
+    url = 'https://api.github.com/repos/{}/{}/issues'.format(
+        repo_owner,
+        repo_name
+    )
     issues = requests.get(url)
     return len(issues.json())
 
@@ -33,6 +35,8 @@ if __name__ == '__main__':
         repo_owner = repo['owner']['login']
         repo_url = repo['url']
         print('Name: {}'.format(repo_name))
-        print('Issues: {}'.format(get_open_issues_amount(repo_owner,
-                                                         repo_name)))
+        print('Issues: {}'.format(get_open_issues_amount(
+            repo_owner,
+            repo_name
+        )))
         print('Link: {}\n'.format(repo_url))
